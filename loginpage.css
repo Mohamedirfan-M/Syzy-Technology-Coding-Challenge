@@ -1,0 +1,148 @@
+
+ .fullnavbar{               /*navbar height and width givened */
+    height: 170px;
+    width: 100vw;
+    margin: 0%;
+    text-align: center;
+}
+.box{                     /*This box is over syzy technologies text over box*/
+    height: 58px;
+    width: 350px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 600px;
+    margin-bottom: 30px;
+    margin-bottom: 5px;
+}
+.fullnavbar a{         /* for navbar option styles*/
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: inline-block; 
+}
+.fullnavbar a:hover{   /* animations for navbar options*/
+    color: rgb(255, 0, 0);
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.2); 
+    text-decoration: underline;
+}
+.space{            /*for giving one line text between navbar and sign in box*/
+    height: 40px;
+    width: 100vw;
+}
+.space h5{         /*here arranging the text*/
+    margin-top: 20px;
+    margin-left: 420px;
+}
+.box2{            /*creating another box for sign in*/
+    cursor: pointer;
+    height: 300px;
+    width: 580px;
+    border: 1px solid rgb(210, 203, 203);
+    margin: 0 auto;
+}
+.box2 p{         /*inside box paragraph styles*/
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+.forms form{   /*displaying form tag contents in a column direction*/
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    line-height: 3.5;
+}
+.forms input{   /*styles for input tag*/
+    font-size: 17px;
+    border: none; 
+    border-bottom: 1px solid black; 
+    outline: none; 
+    padding: 5px; 
+    height: 35px;
+    width: 450px;
+    padding-left: 15px;
+    margin-left: 60px;
+}
+.forms button{  /*styles for button tag*/
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 35px;
+    width: 90px;
+    margin-left: 245px;
+    border: none;
+    line-height: 35px;
+    border-radius: 10px;
+}
+.forms button:hover{  /*adding styles for button tag*/
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1); 
+    background-color: black;
+    color: azure;
+    border-color: white;
+} 
+
+/*responsive media qeury*/
+@media (max-width: 600px) {  /*smaller screen size givened*/
+    .navbar-toggler {
+        position: relative; /* Position it absolutely */
+        bottom: 50px;
+        left: 15px; /* Adjust the left position as needed */
+    }
+    .navbar-collapse {
+        text-align: left; /* Align text to the left */
+    }
+    .fullnavbar{
+        height: 150px;
+    }
+    .box {
+        padding-top: 10px;
+        font-size: 26px; /* Adjusted font size for smaller screens */
+        margin: 30px 0px 0px 140px;
+        text-align: center;
+        height: 58px;
+        width: 250px;
+    }
+    .box h1{
+        font-size: 22px;
+    }
+    .space h5{
+        margin-left: 160px;
+    }
+    .box2 {
+        width: 80%;
+        padding: 15px;
+        height: 350px;
+    }
+    .forms input {
+        width: 92%;
+        padding: 10px;
+        margin: 5px 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .forms button {
+        border-radius: 0%;
+        margin-left: 10px;
+        width: 93%;
+        padding: 10px;
+        background-color: #44ddee;
+        color: rgb(4, 4, 4);
+        border: none;
+        cursor: pointer;
+        height: 48px;
+        line-height: 15px;
+        align-content: center;
+        text-align: center;
+    }
+    .forms button:hover {
+        background-color: #151616;
+        color: aliceblue;
+    }
+}
